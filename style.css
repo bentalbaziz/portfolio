@@ -165,9 +165,30 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f8fafc, #e0f2fe);
 }
+
+.profile-img {
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.section__slogan {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #475569;
+  font-style: italic;
+}
+
 
 .section__pic-container {
   display: flex;
@@ -345,7 +366,6 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
   gap: 0.5rem;
 }
 
@@ -429,4 +449,112 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-category {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-5px);
+}
+
+.skills-category h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #0f172a;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  transition: width 0.4s ease;
+}
+
+.cert-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cert-list li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.cert-list strong {
+  color: #3b82f6;
+}
+/* ===== MAINTENANCE MESSAGE ===== */
+.maintenance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.maintenance-message {
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 400px;
+  animation: pulse 2s infinite;
+}
+
+.maintenance-message h2 {
+  font-size: 24px;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.maintenance-message p {
+  font-size: 16px;
+  color: #555;
+}
+
+.maintenance-icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
