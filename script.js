@@ -15,3 +15,10 @@ function closeMaintenance() {
   document.getElementById("maintenance-popup").style.display = "none";
 }
 
+window.onclick = function(event) {
+  const popup = document.getElementById("maintenance-popup");
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+};
+
