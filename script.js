@@ -4,3 +4,14 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+
+
+function showMaintenance() {
+  document.getElementById("maintenance-popup").style.display = "flex";
+}
+
+function closeMaintenance() {
+  document.getElementById("maintenance-popup").style.display = "none";
+}
+
