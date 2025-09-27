@@ -22,3 +22,11 @@ window.onclick = function(event) {
   }
 };
 
+
+function showNetworkProject() {
+  document.getElementById("project-popup").style.display = "flex";
+}
+
+function closeNetworkProject() {
+  document.getElementById("project-popup").style.display = "none";
+}

@@ -218,7 +218,7 @@
         <p>Designed and deployed a secure multi-entity network with firewalls, VPNs, servers, and Active Directory/GLPI.</p>
         <div class="btn-container">
           <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="showMaintenance()">Live Demo</button>
+          <button class="btn btn-color-2 project-btn" onclick="showNetworkProject()">Live Demo</button>
         </div>
       </div>
 
@@ -298,6 +298,26 @@
         </div>
       </div>
     </section>
+
+
+<!--Network Project Popup -->
+<div id="project-popup" class="projectpopup-container" style="display: none;">
+  <div class="project-message">
+    <img src="./assets/network.png" alt="Project Icon" class="maintenance-icon" />
+    <h2>Secure Multi-Enterprise Network</h2>
+    <p>
+      For this project, a detailed <strong>report</strong> is provided in Frensh.
+    </p>
+    <button class="btn btn-color-2" onclick="window.open('./assets/rapportProjetNDAO_COMBE_BEN-TALB.pdf', '_blank')">
+      Project report
+    </button>
+    <button class="btn btn-color-1" onclick="closeNetworkProject()">Close</button>
+  </div>
+</div>
+
+
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
