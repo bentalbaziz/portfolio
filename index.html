@@ -231,7 +231,7 @@
         <p>Movie discovery and management app with RESTful API, JWT authentication, and modern web interface.</p>
         <div class="btn-container">
           <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="showMaintenance()">Live Demo</button>
+          <button class="btn btn-color-2 project-btn" onclick="openPopup('cinescope-popup')">Learn More</button>
         </div>
       </div>
 
@@ -315,7 +315,14 @@
   </div>
 </div>
 
-
+<div id="cinescope-popup" class="popup-container">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup('cinescope-popup')">&times;</span>
+    <h2>CineScope</h2>
+    <p>Movie discovery app description, screenshots, and demo video.</p>
+    <img src="./assets/film.jpeg" alt="UI screenshot" class="popup-img"/>
+  </div>
+</div>
 
 
     <footer>

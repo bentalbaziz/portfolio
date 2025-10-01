@@ -30,3 +30,11 @@ function showNetworkProject() {
 function closeNetworkProject() {
   document.getElementById("project-popup").style.display = "none";
 }
+
+
+function openPopup(id) {
+  document.getElementById(id).style.display = 'block';
+}
+function closePopup(id) {
+  document.getElementById(id).style.display = 'none';
+}
